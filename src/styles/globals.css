@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --font-sans: 'Tajawal', 'Inter', sans-serif;
+  --font-heading: 'Tajawal', 'Inter', sans-serif;
+  
+  --color-primary-text: #151c24;
+  --color-secondary-text: #59616e;
+  --color-bg-light: #ffffff;
+  --color-bg-gray: #f5f6f8;
+  --color-bg-dark: #0c131d;
+  
+  --color-accent-yellow: #f3b100;
+  --color-accent-yellow-hover: #e2a400;
+  --color-accent-orange: #f6623e;
+  --color-accent-blue: #4f46e5;
+  
+  --border-radius-lg: 32px;
+  --border-radius-md: 20px;
+  --border-radius-sm: 12px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-light);
+  color: var(--color-primary-text);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-bg-dark);
+}
+
+/* Custom scrollbar matching light theme */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg-gray);
+}
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Hide scrollbar for marquee */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
